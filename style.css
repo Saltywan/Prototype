@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    background-image: url(https://media.discordapp.net/attachments/988390773919744031/988821019173195796/Background.png);
+}
+
+nav {
+    position: fixed;
+    background-color: #FFA901;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px 0px;
+    z-index: 1;
+}
+
+nav>div>img {
+    position:absolute;
+    left:5%;
+    top: 16%;
+    margin:0;
+    padding:0;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+nav>div {
+    text-align: center;
+    width:100%;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    font-size: 35px;
+    color: #000;
+}
+
+.container-1{
+    position:relative;    
+    border: 1px;
+    border-radius: 8px;
+    background-color: #FFD646;
+    top:150px;
+    width:62%;
+    left: 50%;
+    transform: translate(-42%, -50%);
+    text-align: center;
+    font-size: 22px;
+    padding: 20px 8px;
+    font-family: 'Prompt', sans-serif;
+}
+.container-2{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    top:10em;
+    justify-content: center;
+}
+.icon img{
+    position: relative;
+    object-position: 45% 80%;
+    border-radius: 20%;
+    object-fit: cover;
+    width:100px;
+    height:100px;
+}
+a{
+    text-decoration: none;
+}
+.icon:hover{
+    padding:15px 30px;
+    border: #515A79 solid 2px;
+}
+.icon p{
+    text-align:center;
+    width: 80px;
+    height: 28px;
+    border:#515A79 2px solid;
+    margin: 8px;
+    font-family: 'Prompt', sans-serif;
+    font-size: 18px;
+    background-color: white;
+}
+.icon{
+    margin-bottom: 40px;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+}
+.icon:nth-child(2), .icon:nth-child(3){
+    filter: grayscale(100%);
+    /* opacity: 0.7; */
+}
+.menu>img{
+    position: absolute;
+    top:120px;
+    left: 5%;
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+}
