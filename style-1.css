@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-image: url(https://media.discordapp.net/attachments/988390773919744031/988821019173195796/Background.png);
 }
 nav {
     position: fixed;
@@ -28,18 +29,37 @@ nav>div>img {
     width: 60px;
     height: 60px;
 }
+.topic{
+    position:absolute;
+    top:12%;
+    left:3%;
+}
+.topic > span{
+    font-size: 20px;
+    text-align: center;
+    background-color: #515A79;
+    color:white;
+    font-family: 'Prompt', sans-serif;
+    display: inline-block;
+    border: 0px solid #000;
+    padding: 5px 12px;
+    border-radius: 8px;
+    position:relative;
+    top: -8px;
+    left: 8px;
+}
 /* .search{
     position:relative;
     top:12%;
 } */
 .search input[type=text]{
     position:absolute;
-    top:12%;
+    top:18%;
     left:50%;
     width: 75%;
     box-sizing: border-box;
     border: 2px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 16px;
     background-color: white;
     background-image: url('https://www.w3schools.com/howto/searchicon.png');
@@ -51,18 +71,69 @@ nav>div>img {
 }
 .item{
     position:absolute;
-    top:16%;
-    text-align: center;
+    top:22%;
+    text-align: left;
     width:100%;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     font-size: 35px;
     color: #000;
 }
-.item > ul{
-    list-style-type: none;
+
+.item input[type=checkbox]{
+    opacity: 0;
 }
-.item a{
-    color:#000;
-    text-decoration: none;
+label img {
+    height: 100px;
+    width: 100px;
+    border-radius: 51px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+label {
+    padding: 2px;
+    display: block;
+    position: relative;
+    left:5%;
+    margin: 1px;
+    cursor: pointer;
+  }
+label:before {
+    /* background-color: white; */
+    color: white;
+    content: "";
+    display: block;
+    border-radius: 50%;
+    /* border: 1px solid grey; */
+    position: relative;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 22px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+}
+:checked + label:before {
+    z-index: 1;
+    position: relative;
+    top: 15px;
+    left: 70px;
+    content: "-";
+    background-color: black;
+    transform: scale(1);
+}
+:checked + label img {
+    transform: scale(0.9);
+    z-index: -1;
+}
+label span{
+    position: absolute;
+    top:42%;
+    font-style: italic;
+    left:30%;
+    display: inline-block;
+    font-size: 22px;
+    font-family: 'Prompt', sans-serif;
 }
