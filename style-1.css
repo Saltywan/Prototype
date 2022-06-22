@@ -138,3 +138,15 @@ label span{
     font-size: 22px;
     font-family: 'Prompt', sans-serif;
 }
+.btn-main{
+    background-color: white;
+    font-size: 15px;
+    border: 1px solid #515A79;
+    padding: 6px 50px;
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position:absolute;
+    bottom:55px;
+}
