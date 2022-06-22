@@ -84,6 +84,8 @@ nav>div>img {
     opacity: 0;
 }
 label img {
+    position: relative;
+    left:4%;
     height: 100px;
     width: 100px;
     border-radius: 51px;
@@ -94,7 +96,6 @@ label {
     padding: 2px;
     display: block;
     position: relative;
-    left:5%;
     margin: 1px;
     cursor: pointer;
   }
@@ -132,7 +133,7 @@ label span{
     position: absolute;
     top:42%;
     font-style: italic;
-    left:30%;
+    left:35%;
     display: inline-block;
     font-size: 22px;
     font-family: 'Prompt', sans-serif;
