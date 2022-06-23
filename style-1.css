@@ -72,7 +72,7 @@ nav>div>img {
 }
 .item{
     position:absolute;
-    top:22%;
+    top:25%;
     text-align: left;
     width:100%;
     font-family: 'Inter', sans-serif;
@@ -86,18 +86,21 @@ nav>div>img {
 }
 label img {
     position: relative;
+    top:-25px;
     left:4%;
-    height: 100px;
-    width: 100px;
+    height: 85px;
+    width: 85px;
     border-radius: 51px;
     transition-duration: 0.2s;
     transform-origin: 50% 50%;
 }
 label {
-    padding: 2px;
+    top:-25px;
+    height: 85px;
+    /* padding: 2px; */
     display: block;
     position: relative;
-    margin: 1px;
+    /* margin: 1px; */
     cursor: pointer;
   }
 label:before {
@@ -120,7 +123,7 @@ label:before {
 :checked + label:before {
     z-index: 1;
     position: relative;
-    top: 15px;
+    top: 3px;
     left: 70px;
     content: "-";
     background-color: black;
@@ -131,10 +134,10 @@ label:before {
     z-index: -1;
 }
 label span{
-    position: absolute;
-    top:42%;
+    position: relative;
+    top:-60px;
+    left:12%;
     font-style: italic;
-    left:35%;
     display: inline-block;
     font-size: 22px;
     font-family: 'Prompt', sans-serif;
