@@ -115,7 +115,8 @@ nav>div>img {
     background-color: #515A79;
     top:47%;
     width:65%;
-    height:280px;
+    height:35%;
+    max-height: 40%;
     border:1px solid none;
     border-radius: 25px;
     padding:10px;
@@ -158,4 +159,29 @@ input{
 .popup button:hover{
     background-color: #FFA901;
     color:black;
+}
+@media only screen and (min-device-width:750px) {
+    .popup{
+        width:35%;
+        max-height: 65%;
+        height: 65%;
+    }
+    input{
+        height: 2.5vw;
+        margin-top: 2vw;
+        margin-bottom: 3vw;
+        font-size: 1vw;
+    }
+    .popup > span{
+        margin-top: 10px;
+        display: block;
+        text-align: center;
+        color:white;
+        font-family: 'Prompt', sans-serif;
+        font-size: 2vw;
+    }
+    .popup button{
+        height:4vw;
+        font-size: 1.5vw;
+    }
 }
