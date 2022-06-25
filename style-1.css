@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-image: url(https://media.discordapp.net/attachments/988390773919744031/988821019173195796/Background.png);
+    background-repeat: no-repeat;
 }
 nav {
     position: fixed;
@@ -36,7 +37,7 @@ nav>div>img {
     left:3%;
 }
 .topic > span{
-    font-size: 20px;
+    font-size: 100%;
     text-align: center;
     background-color: #515A79;
     color:white;
@@ -49,10 +50,9 @@ nav>div>img {
     top: -8px;
     left: 8px;
 }
-/* .search{
-    position:relative;
-    top:12%;
-} */
+#myInput{
+    margin-top: 1.25%;
+}
 .search input[type=text]{
     position:absolute;
     top:18%;
@@ -74,11 +74,13 @@ nav>div>img {
     position:absolute;
     top:25%;
     text-align: left;
-    width:100%;
+    width:94%;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     font-size: 35px;
     color: #000;
+    margin-bottom: 100px;
+    margin-top: 3%;
 }
 
 .item input[type=checkbox]{
@@ -86,20 +88,23 @@ nav>div>img {
 }
 label img {
     position: relative;
-    top:-25px;
     left:4%;
-    height: 85px;
-    width: 85px;
-    border-radius: 51px;
+    max-width: 18vw;
+    max-height: 18vw;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
     transition-duration: 0.2s;
     transform-origin: 50% 50%;
 }
 label {
     top:-25px;
-    height: 85px;
+    height: fit-content;
     /* padding: 2px; */
-    display: block;
+    display: flex;
     position: relative;
+    justify-items: center;
+    align-items: center;
     /* margin: 1px; */
     cursor: pointer;
   }
@@ -123,8 +128,8 @@ label:before {
 :checked + label:before {
     z-index: 1;
     position: relative;
-    top: 3px;
-    left: 70px;
+    top: -5.5vw;
+    left: 20vw;
     content: "-";
     background-color: black;
     transform: scale(1);
@@ -135,26 +140,77 @@ label:before {
 }
 label span{
     position: relative;
-    top:-60px;
+    top:-100%;
     left:12%;
     font-style: italic;
     display: inline-block;
-    font-size: 22px;
+    font-size: 5vw;
     font-family: 'Prompt', sans-serif;
 }
 .btn-main{
     background-color: white;
-    font-size: 15px;
+    font-size: 3.5vw;
     border: 1px solid #515A79;
-    padding: 6px 50px;
     font-family: 'Prompt', sans-serif;
     text-align: center;
     left:50%;
     transform: translate(-50%,-50%);
-    position:absolute;
-    bottom:55px;
+    position:fixed;
+    bottom:20px;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    width: 80px;
+    height: 35px;
     transition: all 0.5s;
 }
 .btn-main:hover{
     background-color: #FFA901;
 }
+.item > form{
+    margin-bottom: 80px;
+}
+@media only screen and (min-device-width:720px){
+    .btn-main{
+        font-size: 1.75vw;
+        width: 10.5vw;
+        height: 3vw;
+    }
+    .item{
+        left:6%;
+    }
+    .item > form{
+        margin-bottom: 7vw;
+    }
+    :checked + label:before {
+        left: 6.5%;
+    }
+    label img{
+        max-width: 18vw;
+        max-height: 18vw;
+        height: 175px;
+        width: 175px;
+    }
+    label {
+        padding-bottom: 3vw;
+    }
+    label span{
+        font-size: 2vw;
+    }
+    .topic span{
+        font-size: 2vw;
+    }
+    :checked + label:before {
+        top: -75px;
+        left: 68px;
+    }
+}
+/* @media only screen and (min-device-width:900px) and (max-device-width:1199px){
+    label span{
+        top: -75%;
+    }
+}
+@media only screen and (min-device-width:1200px){
+    label span{
+        top: -40%;
+    }
+} */

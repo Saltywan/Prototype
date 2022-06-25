@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-image: url(https://media.discordapp.net/attachments/988390773919744031/988821019173195796/Background.png);
+    background-repeat: no-repeat;
 }
 nav {
     position: fixed;

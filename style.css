@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-image: url(https://media.discordapp.net/attachments/988390773919744031/988821019173195796/Background.png);
+    background-repeat: no-repeat;
 }
 
 nav {
@@ -13,16 +14,14 @@ nav {
 }
 
 nav>div>img {
-    border:2px solid black;
     position:absolute;
     left:5%;
     top: 16%;
     margin:0;
     padding:0;
     object-fit: cover;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
 }
 
 nav>div {
@@ -72,6 +71,7 @@ a{
     border: #515A79 solid 2px;
 }
 .icon p{
+    padding-top: 8px;
     text-align:center;
     width: 80px;
     height: 28px;
@@ -98,4 +98,38 @@ a{
     height: 65px;
     object-fit: cover;
     border-radius: 50%;
+}
+.menu{
+    display: flex;
+}
+.icon1 img{
+    object-position: 50% 10%;
+}
+@media only screen and (min-device-width: 750px){
+    .container-1{
+        transform: translate(-50%, -50%);
+        font-size: 2vw;
+    }    
+    .container-2{
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .icon{
+        padding-top: 80px;    
+    }
+    .icon img{
+        width:18vw;
+        height:18vw;
+    }
+    .icon p{
+        position: relative;
+        left:50%;
+        transform: translate(-50%);
+        margin-top: 20px;
+        font-size: 1.5vw;
+        width: fit-content;
+        height: fit-content;
+        padding:3% 12%;
+    }
 }
